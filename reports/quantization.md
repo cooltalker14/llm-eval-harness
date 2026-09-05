@@ -63,4 +63,4 @@ A model can answer correctly and then keep generating: repeating the object, rea
 
 ## Verdict
 
-**REGRESSION DETECTED** — candidate is significantly worse on at least one tracked metric.
+**REGRESSION DETECTED**:  candidate is significantly worse on at least one tracked metric.
