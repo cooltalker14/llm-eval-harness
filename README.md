@@ -2,7 +2,7 @@
 
 Regression detection for LLM systems: does this model change actually make things better, or is the difference noise?
 
-This is the companion to [llm-serving-bench](https://github.com/YOURNAME/llm-serving-bench), which found that AWQ int4 quantization delivers **2.2x the throughput of bf16 at low concurrency**. That result is only actionable if the quantized model still produces correct output — a question throughput numbers cannot answer. This repo answers it, and generalizes to any model change: a prompt edit, a version bump, a fine-tune, a new provider.
+This is the companion to [llm-serving-bench](https://github.com/cooltalker14/llm-serving-bench), which found that AWQ int4 quantization delivers **2.2x the throughput of bf16 at low concurrency**. That result is only actionable if the quantized model still produces correct output — a question throughput numbers cannot answer. This repo answers it, and generalizes to any model change: a prompt edit, a version bump, a fine-tune, a new provider.
 
 ---
 
