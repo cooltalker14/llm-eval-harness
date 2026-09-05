@@ -1,0 +1,19 @@
+name: test
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Verify statistics against known ground truth
+        run: python tests/test_stats.py
+      - name: Verify deterministic scorers
+        run: python tests/test_scorers.py
+      - name: Verify judge calibration
+        run: python tests/test_agreement.py
+      - name: Verify regression detection end-to-end
+        run: python tests/test_pipeline.py
