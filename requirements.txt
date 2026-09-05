@@ -1,7 +1,3 @@
 aiohttp>=3.9
 numpy>=1.24
 scipy>=1.11
-
-
-Submitted batch job 2252515
-Submitted batch job 2252518
