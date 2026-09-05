@@ -5,5 +5,4 @@ venvs/
 .venv/
 runs/
 cache/
-reports/*.md
 !reports/.gitkeep
